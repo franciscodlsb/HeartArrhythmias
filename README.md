@@ -3,9 +3,9 @@
 Current files:
 1. Readme.md -> now work in progress and some notes, should include the documentation for the rest of the files and general info about arrythmias
 2. Folder ECG_Data -> I can't upload, should be obtained from here: https://doi.org/10.1038/s41597-020-0386-x
-3. Folder Train_Test_Data -> to put created X (feat matrix) and Y (labels)
-4. ECG_Features -> right now contains the whole pipeline. Should be changed to contain only the ECG function. It should be divided in the following jupyter notebooks:
-    - "1. DataPre_Feature_Extraction.ipynb" - Includes data exploration, choice of preprocessing library with examples, and calls the ECG_features.py at the end to create and save the X and Y fiels in Train_Test_Data
+3. Folder Train_Test_Data -> created X (feat matrix) and Y (labels)
+4. Whole_Pipeline -> right now contains the whole pipeline. It should be divided in the following jupyter notebooks:
+    - "1. DataPre_Feature_Extraction.ipynb" - Includes data exploration, choice of preprocessing library with examples, and calls the ECG_features.py at the end to create and save the X and Y fiels in Train_Test_Data - Done, maybe improve documentation
     - "2. Arrythmia_classification.ipynb" - XGBoost, SVM, naive bayes comparison with 10 fold cross-validation. To do: 1. Organize in a presentable way, 2. maybe remove equal sampling and use imbalanced data and metrics that don't require balance (in reality most patients are healthy), 3. Optimize Naive Bayes and SVM to increase accuracy
     - "3. RNN.ipynb" - Optional, to do, only tried with FNN in pytorch, use a RNN or CNN, better for time series (https://towardsdatascience.com/time-series-classification-with-deep-learning-d238f0147d6f).
 
